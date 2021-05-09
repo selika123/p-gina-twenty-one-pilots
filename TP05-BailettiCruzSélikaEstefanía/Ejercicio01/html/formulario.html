@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content "Sitio web sobre banda Twenty one pilots">
+    <meta name="author" content "Sélika Estefanía Bailetti Cruz">
+    <link rel="Stylesheet" href="../css/estilo.css">
+    <title>Twenty one pilots</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a class="bottons" class="nav" href="#contenido"> Saltar al contenido </a></li>
+            <li><a href="#contenedor-menu">Saltar a la navegación</a></li>
+        </ul>
+    </nav>
+    <header class="encabezado">
+        <h1>Twenty One Pilots</h1>
+    </header>
+    <section id="contenedor-menu">
+        <a href="#contenedor-menu"> <img src="../img/burger_menu.png" alt="Abrir menú" id="desplegar"></a>
+        <a href="#"> <img src="../img/cerrar_menu.png" alt="Cerrar menú" id="ocultar" > </a>
+
+        <nav id="menú"  >
+            <ul id="contenedor-enlaces" >
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../html/tabla.html"> Álbumes</a></li>
+                <li><a href="../html/galeria.html">Galería</a></li>
+                <li><a href="../html/formulario.html">Formulario</a></li> 
+            </ul>
+        </nav>
+    </section>
+    <main id="contenido" class="menuprincipal">
+        <section>
+            <h2 class="texto">Formulario </h2>
+            <form action="mailto: selikabailetti@gmail.com" method="POST">
+                <legend>Encuesta</legend>
+                <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nom" placeholder="Ingrese su nombre" required maxlength="50">
+                    <label for="lista">Seleccione su género favorito:</label>
+                        <select name="lista" id="lista">
+                            <option value="1">Rock</option>
+                            <option value="2">Pop</option>
+                            <option value="3">Folk</option>
+                            <option value="4">Metal</option>
+                        </select>
+                    <legend>Marque las bandas que conoce: </legend>
+                    <label  for="queen">
+                        <input type="checkbox" name="Queen" id="queen" >Queen
+                    </label>
+                    <label  for="Tdcc">
+                        <input class="checkbox" type="checkbox" name="Two door cinema club" id="Tdcc" >Two door cinema club
+                    </label>
+                    <label  for="WH">
+                        <input type="checkbox" name="Whitney Houston" id="WH" checked >Whitney Houston
+                    </label>
+                    <label for="BG">
+                        <input type="checkbox" name="Bee Gees" id="BG">Bee Gees
+                    </label>
+                    <label  for="lista2">Seleccione su artista favorito:</label>
+                        <select name="lista" id="lista">
+                            <option value="1">Queen</option>
+                            <option value="2">Two door cinema club</option>
+                            <option value="3">Whitney Houston</option>
+                            <option value="4">Bee Gees</option>
+                            <option value="5">Otro...</option>
+                        </select>
+
+                <label for="cuenta">¿Del 1 al 200 cuantas bandas conoce? En aproximación:</label>
+                    <input type="number" name="numbandas" id="cuenta" min="0" max="200" placeholder="10" >
+                
+                <label for="comentario">¿Alguna vez fuiste a un recital/concierto?</label>
+                    <textarea name="comentario" id="comentario" cols="30" rows="10">Agrega un comentario</textarea>
+                
+                <fieldset>
+                    <input type="submit"value="Enviar">
+                    <input type="reset" value="Limpiar" >
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer> 
+        <p> © Copyright Bailetti</p>
+        <p>Contacto: <a href="mailto: selikabailetti@gmail.com">selikabailetti@gmail.com</a></p>
+    </footer>
+    
+</body>
+</html>
